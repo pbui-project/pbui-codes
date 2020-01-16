@@ -5,7 +5,7 @@ require 'sinatra'
 set :port, 7284
 
 get '/' do
-  erb :index 
+  erb :index
   # erb :index, locals:
   # { sensors_data: `sensors`,
   #   hddtemp_data: `hddtemp`,
@@ -15,6 +15,10 @@ get '/' do
   #   uptime_data: `uptime` }
 end
 
-get '/members' do
-  erb :members
+get '/about' do
+  erb :about
+end
+
+not_found do
+  erb :notfound
 end
