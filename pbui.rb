@@ -3,9 +3,9 @@
 require 'sinatra'
 
 set :port, 7284
-get '/' do
 
-  erb :index, :layout => :layout
+get '/' do
+  erb :index 
   # erb :index, locals:
   # { sensors_data: `sensors`,
   #   hddtemp_data: `hddtemp`,
