@@ -1,6 +1,13 @@
+<html>
 <head>
   <title>PBUI Project</title>
 <style>
+.footman {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%
+}
    body {
             margin: 10px;
             background-image: url("https://waifupaste.moe/assets/imgs/texture.png");
@@ -22,4 +29,8 @@
 </table>
 <hr />
   <%= yield %>
+<div class="footman">
+  <p style="text-align: center;">Copyright (c) 2020 The PBUI Project Team</p>
+</div>
 </body>
+</html>
