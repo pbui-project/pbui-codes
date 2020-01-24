@@ -1,0 +1,11 @@
+--2020-01-24 13:01:11--  https://avatars3.githubusercontent.com/u/57543193?s=200
+Resolving avatars3.githubusercontent.com (avatars3.githubusercontent.com)... 151.101.64.133, 151.101.128.133, 151.101.192.133, ...
+Connecting to avatars3.githubusercontent.com (avatars3.githubusercontent.com)|151.101.64.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7970 (7.8K) [image/png]
+Saving to: ‘57543193?s=200’
+
+57543193?s=200        0%[                    ]       0  --.-KB/s               57543193?s=200      100%[===================>]   7.78K  --.-KB/s    in 0s      
+
+2020-01-24 13:01:11 (21.5 MB/s) - ‘57543193?s=200’ saved [7970/7970]
+
