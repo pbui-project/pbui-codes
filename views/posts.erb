@@ -18,8 +18,8 @@
   <% full = File.basename(post, ".md").split('_')%>
   <% blurb = File.foreach(post).first %>
   <% date = Date.iso8601(full[0]).strftime("%A, %B %d, %Y") %>
-  <% author = full[1] %>
-  <% title = full[2] %>
+  <% author = full[1].gsub('-', ' ') %>
+  <% title = full[2].gsub('-', ' ') %>
   <div>
     <h2 class="post_title"><a href=<%= post %>><%= title %></a></h2>
     <h4 class="post_date"> By <%= author %> on <%= date %></h4>
