@@ -3,4 +3,5 @@ source 'https://rubygems.org' do
   gem 'sinatra'
   gem 'sqlite3'
   gem 'thin'
+  gem 'redcarpet'
 end

@@ -1,0 +1,29 @@
+<style>
+.post_title {
+  padding: 0px;
+  margin: 0px;
+}
+
+.post_date {
+  margin: 0px;
+  font-weight: normal;
+}
+.post_blurb {
+  margin: 0px;
+  font-weight: normal;
+}
+</style>
+
+<% posts.sort.reverse.each do |post| %>
+  <% full = File.basename(post, ".md").split('_')%>
+  <% blurb = File.foreach(post).first %>
+  <% date = Date.iso8601(full[0]).strftime("%A, %B %d, %Y") %>
+  <% author = full[1] %>
+  <% title = full[2] %>
+  <div>
+    <h2 class="post_title"><a href=<%= post %>><%= title %></a></h2>
+    <h4 class="post_date"> By <%= author %> on <%= date %></h4>
+    <h5 class="post_blurb"> <%= blurb %> </h5>
+    <br>
+  </div>
+<% end %>
