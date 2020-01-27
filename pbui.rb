@@ -8,13 +8,6 @@ markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tabl
 
 get '/' do
   erb :index
-  # erb :index, locals:
-  # { sensors_data: `sensors`,
-  #   hddtemp_data: `hddtemp`,
-  #   free_data: `free -h`,
-  #   df_data: `df -h`,
-  #   mpstat_data: `mpstat`,
-  #   uptime_data: `uptime` }
 end
 
 get '/about' do
@@ -23,7 +16,6 @@ end
 
 get '/posts' do
   post_list = Dir['public/posts/*']
-  
   erb :posts, locals: { posts: post_list }
 end
 
@@ -34,6 +26,18 @@ get '/public/posts/:post' do
   erb :post, locals: { text: markdown(post_data)}
 end
 
+get '/logs' do 
+  log_days = Dir['public/logs/*']
+  erb :logs, locals: {logs: log_days}
+end
+
+get '/public/logs/:log' do
+  log_path = "public/logs/#{params['log']}"
+  log_data = File.read(log_path)
+  log_data.gsub! '<', '&lt;'
+  log_data.gsub! '>', '&gt;'
+  erb :log, locals: {text: log_data}
+end
 not_found do
   erb :notfound
 end

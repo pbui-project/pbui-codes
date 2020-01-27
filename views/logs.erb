@@ -1,0 +1,6 @@
+<% logs.sort.reverse.each do |log| %>
+  <% log_date = File.basename(log) %>
+  <a href=<%= log %>> <%= log_date %> </a>
+  <br>
+<% end %>
+
