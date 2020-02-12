@@ -15,6 +15,11 @@ Another goal of the PBUI project is to help improve documentation for Zig throug
 will take the form of tutorials that explain how to use both our toolsets and other Zig functions when creating 
 applets. By doing this, we hope to make Zig more user friendly and encourage others to create Zig-based applications.
 
+#### Design Choices
+
+Our overall design for this project is to create a shell in Zig, which will allow the user to use the applets that we
+created. These applets will in turn depend on functions from our standard library, linking all parts of our project.
+
 ### Why PBUI project?
 
 Why did we choose Zig to create our toolsets/userland? Firstly, we set out to create a userland in Go, however we soon
