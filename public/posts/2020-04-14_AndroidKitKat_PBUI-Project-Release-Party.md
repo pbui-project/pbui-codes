@@ -5,7 +5,12 @@ Today, the [PBUI Project] is officially launching. You may have seen or heard of
 
 The PBUI Project is an implementation of a subset of [GNU Coreutils] in the up and coming programming language [Zig]. We've had our ups and downs with the language, but overall we really like it and will continue to follow its development. 
 
-The PBUI Project has implementations of:
+Here is a quick video by jcharbon giving a general introduction/overview to the [PBUI Project]:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BFtKidPvIEo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+(The video by AndroidKitKat referenced can be found at the bottom of this blog post)
+
+The PBUI Project currently has implementations of:
 
 - basename
 - cat
